@@ -13,7 +13,7 @@
     }
 
     body {
-      background-color: #6baad7;
+      background-color: #cfc877;
       color: #333;
       display: flex;
       flex-direction: column;
@@ -24,7 +24,7 @@
     .container {
       max-width: 480px;
       width: 100%;
-      background: #b7cfe3;
+      background: #61a95f;
       border-radius: 12px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       padding: 30px 20px;
@@ -32,9 +32,17 @@
     }
 
     .logo {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 120px;
+      margin: 0 auto 10px;
+      object-fit: cover;
+    }
+
+    .vendedor {
+      width: 120px;
+      height: 120px;
       margin: 0 auto 20px;
+      margin-left: 20px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #0e76a8;
@@ -43,7 +51,7 @@
     h1 {
       font-size: 1.5em;
       margin-bottom: 10px;
-      color: #6baad7;
+      color: #fff;
     }
 
     p {
@@ -55,7 +63,7 @@
     .btn {
       display: block;
       width: 100%;
-      background-color: #0e76a8;
+      background-color: #28593c;
       color: #fff;
       padding: 14px;
       margin: 10px 0;
@@ -69,7 +77,7 @@
     }
 
     .btn:hover {
-      background-color: #095a85;
+      background-color: #1d7741;
     }
 
     .catalog-preview {
@@ -101,15 +109,16 @@
 </head>
 <body>
   <div class="container">
-    <img src="./Logo.jpeg" alt="Logo da empresa" class="logo" id="companyLogo">
+    <img src="./logo-soy.svg" alt="Logo da empresa" class="logo" id="companyLogo">
+    <img src="./vendedorcorte.jpeg" alt="Vendedor" class="vendedor" id="companyVendedor">
 
-    <h1><T>Soy</T> Genética</h1>
+    <h1><T>Alexandre</T> Consultor</h1>
     <p>Conectando tecnologia e praticidade ao seu negócio.</p>
 
-    <a href="https://www.instagram.com/alexandrefreita?igsh=cG4zczFpY2d5bXUz" class="btn" target="_blank"> <img width="25" height="25" src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="instagram-new"/> Instagram</a>
     <a href="tel:+5564999451206" class="btn">📞 Ligar Agora</a>
     <a href="https://wa.me/5564999451206" class="btn" target="_blank">📱 WhatsApp</a>
-    <a href="./1737.19 - [PEÇA OFF 18] - CATALOGO DE CULTIVARES - 15X21CM.pdf" class="btn" target="_blank"> <img width="25" height="25" src="https://img.icons8.com/?size=100&id=FxkjHZ5GrYOy&format=png&color=000000" alt="psf-link"/> CATALOGO</a>
+    <a href="./1737.19 - [PEÇA OFF 18] - CATALOGO DE CULTIVARES - 15X21CM.pdf" class="btn" target="_blank"> <img style="margin-right: 10px;" width="25" height="25" src="https://img.icons8.com/?size=100&id=FxkjHZ5GrYOy&format=png&color=000000" alt="psf-link"/> CATALOGO</a>
+    <a href="https://geneticasoy.com.br/" class="btn" target="_blank"> <img style="margin-right: 10px;" width="25" height="25" src="https://img.icons8.com/?size=100&id=mxnsvF05U2Vw&format=png&color=000000" alt="site-icone"/> Site</a>
 
     <div class="catalog-preview" id="catalogPreview">
       <!-- Imagens do catálogo serão inseridas via JS -->
@@ -117,15 +126,15 @@
   </div>
 
   <footer>
-    &copy; 2025 Standard Soluções Inteligentes. Todos os direitos reservados.
+    &copy; 2025 Genética SOY. Todos os direitos reservados.
   </footer>
 
-  <script>
+  <!--script>
     // Imagens do catálogo (adicione as URLs reais aqui)
     const catalogImages = [
-      './Product3.jpeg',
-      './Product2.jpeg',
-      './Product1.jpeg'
+      './product3.jpeg',
+      './product2.jpeg',
+      './product1.jpeg'
     ];
 
     const previewContainer = document.getElementById('catalogPreview');
@@ -139,6 +148,6 @@
 
     // Se quiser trocar o logo
     //document.getElementById('companyLogo').src = 'https://via.placeholder.com/100?text=Logo';
-  </script>
+  </script-->
 </body>
 </html>
